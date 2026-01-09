@@ -1,0 +1,94 @@
+/* shows all css relevant to just the home page */
+
+/* creates container for all the ideas */
+.Idea-List{
+    margin-top: 3vh;
+    margin-left: 8vw;
+    width: auto;
+    height: 70vh;
+    overflow-y: auto;
+}
+
+/* Hide scrollbar */
+.Idea-List::-webkit-scrollbar{
+    display: none;
+}
+
+/* Ensures ideas are not stacked on top of eachother */
+.Idea{
+    display: flex;
+    padding-bottom: 2vh;
+}
+
+/* Styling for the text box for the idea */
+.Idea-Text{
+    display: inline-block;
+    background-color: #747474;
+    border-radius: 15px;
+    width: 100%;
+    height: 35px;
+    font-size: 28px;
+    padding-top: 5px;
+    padding-left: 10px;
+    overflow-y: hidden;
+}
+
+/* 10 px gap between like button/count and message*/
+.Idea-Likes{
+    margin-right: 10px;
+}
+
+/* TODO: Attempts at styling the checkbox, will need to fix later */
+.Idea-Like-Button{
+    display: inline-block;
+    border-radius: 100%;
+    height: 30px;
+    width: 30px;
+    border: none;
+    background-color: #747474;
+}
+
+.Idea-Like-Button:hover{
+    cursor: pointer;
+    background-color: #848484;
+}
+
+/* center like counter on the button */
+.Idea-Like-Count{
+    text-align: center;
+}
+
+/* css for new post button */
+.New-Idea-Button{
+    margin-top: 35px;
+    float: right;
+    border: none;
+    color: white;
+    background-color: #747474;
+    border-radius: 15px;
+    font-size: 20px;
+    height: 30px;
+    width: 150px;
+}
+
+.New-Idea-Button:hover{
+    background-color: #848484;
+    cursor:pointer;
+}
+
+.Profile-Button {
+    margin-top: 35px;
+    float: right;
+    border: none;
+    color: white;
+    background-color: #747474;
+    border-radius: 15px;
+    font-size: 20px;
+    height: 30px;
+    width: 150px;
+  }
+  
+  .Profile-Button:hover {
+    background-color: #848484;
+    cursor: pointer;
+  }

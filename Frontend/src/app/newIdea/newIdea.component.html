@@ -1,0 +1,8 @@
+<textarea placeholder="What's on your mind?" class="New-Idea-Field" #IdeaInput></textarea>
+<input type="text" placeholder="Insert link" [(ngModel)]="linkInput" class="Link-Input">
+<input type="file" (change)="onFileSelected($event)" class="File-Input">
+<div>
+    <button class="Post-Idea-Button" (click)="postIdea(IdeaInput.value, linkInput, selectedFile)">Post Idea</button>
+    <!-- <button class="Post-Idea-Button" (click)="postIdea(IdeaInput.value)">Post Idea</button> -->
+    <button class="Post-Idea-Button" routerLink="/">Cancel</button>
+</div>

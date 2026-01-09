@@ -1,0 +1,7 @@
+{
+    "/ideas": {
+        "target": "https://localhost:4200",
+        "secure": false,
+        "changedOrigin": true
+    }
+}

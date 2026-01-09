@@ -1,0 +1,11 @@
+/* This page is overall style for all pages */
+
+.Header{
+    font-weight: 20;
+    font-size: 56px;
+    margin-left: 8vw;
+    margin-top: 6vh;
+    width: auto;
+    height: 60px;
+    overflow-y: hidden;
+}

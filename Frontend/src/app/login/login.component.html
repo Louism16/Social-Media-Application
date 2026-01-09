@@ -1,0 +1,25 @@
+<!-- <div class="container mt-5">
+    <h1>Login</h1>
+    <div class="row mt-5">
+      <div class="col-md-4 mt-2 m-auto ">
+          <button class="btn btn-danger" #loginRef>
+              Login
+            </button>
+      </div>    
+    </div>
+  </div> -->
+  <!-- login.component.html -->
+<div>
+  <h2>Login</h2>
+  <form>
+    <div>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" [(ngModel)]="username">
+    </div>
+    <div>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" [(ngModel)]="password">
+    </div>
+    <button (click)="login()">Login</button>
+  </form>
+</div>

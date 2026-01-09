@@ -1,0 +1,62 @@
+/* css for the newIdea page */
+
+/* css for the idea field */
+.New-Idea-Field{
+    margin-left: 8vw;
+    margin-right: 8vw;
+    padding: 10px;
+    width: 80vw;
+    height: calc(100vh - (12vh + 160px));
+    border: none;
+    color: white;
+    background-color: #747474;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: normal;
+    font-size: 30px;
+    resize: none;
+    border-radius: 15px;
+    
+}
+
+/* text color is darker when placeholder */
+.New-Idea-Field::placeholder{
+    color: #BCBCBC;
+}
+
+/* Style for the link input */
+.Link-Input {
+    /* Add styles specific to your link input */
+    /* For example: */
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    /* Add other desired styles */
+}
+
+/* Style for the file input */
+.File-Input {
+    /* Add styles specific to your file input */
+    /* For example: */
+    margin-top: 10px;
+    /* Add other desired styles */
+}
+
+/* CSS for the new post button */
+.Post-Idea-Button {
+    /* Existing styles for the button */
+    margin-left: 20px;
+    margin-top: 30px;
+    float: right;
+    border: none;
+    color: white;
+    background-color: #747474;
+    border-radius: 15px;
+    font-size: 20px;
+    height: 30px;
+    width: 150px;
+}
+
+.Post-Idea-Button:hover {
+    background-color: #848484;
+    cursor: pointer;
+}

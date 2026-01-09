@@ -1,0 +1,40 @@
+<div class="Idea-List">
+    <div *ngFor="let message of messages" class="Idea">
+      <div>
+        <button class="Idea-Like-Button" (click)="clickLike($event, message.Post_ID)">
+          {{ message.mUserLiked ? '❤️' : '❤️' }}
+        </button>
+        <div class="Idea-Like-Count"> 
+          {{ message.mLikes }}
+        </div>
+      </div>
+      <div>
+        <button class="Idea-Upvote-Button" (click)="clickUpvote($event, message.Post_ID)">
+          {{ message.mUserLiked ? '👍' : '👍' }}
+        </button>
+        <button class="Idea-Downvote-Button" (click)="clickDownvote($event, message.Post_ID)">
+          {{ message.mUserDisliked ? '👎' : '👎' }}
+        </button>
+      </div>
+      <div class="Idea-Text" for="Idea-Button">
+        <!-- {{ message.mMessage }}
+        <a href="{{ message.link }}" target="_blank">{{ message.link }}
+          <img src="{{ message.link }}" alt="Image" width="200" height="150">
+        </a> -->
+        <!-- Display the message text -->
+        {{ message.mMessage }}
+        <!-- Display the link if available and it contains 'Image' in the post -->
+        <ng-container *ngIf="message.link && message.mMessage.toLowerCase().includes('image')">
+          <a href="{{ message.link }}" target="_blank">
+            <img src="{{ message.link }}" alt="Image" width="200" height="150">
+          </a>
+        </ng-container>
+        <!-- Display the link if available and it does not contain 'Image' in the post -->
+        <ng-container *ngIf="message.link && !message.mMessage.toLowerCase().includes('image')">
+          <a href="{{ message.link }}" target="_blank">{{ message.link }}</a>
+        </ng-container>
+      </div>
+    </div>
+  </div>
+  <button class="New-Idea-Button" routerLink="/newIdea">New Idea</button>
+  <button class="Profile-Button" routerLink="/profile">Go to Profile</button>

@@ -4,14 +4,14 @@
 * Team Number: 23
 * Team Name: team-23
 * Team Members: 
-    * Adam Burnstine - PM: abb424@lehigh.edu
+    * Louis Marca - PM: lom225@lehigh.edu
     * Jacob The Losen - Mobile: jwt325@lehigh.edu
     * Kevin Cawood - Frontend: kbc225@lehigh.edu 
     * Louis Marca - Backend: lom225@lehigh.edu
     * Juhi Grover - Admin: jug225@lehigh.edu
 
 ## Git Repo:
-* URL: https://bitbucket.org/adam-burnstine/team-23-aplication/src/master/ 
+* URL: https://bitbucket.org/louis-marca/team-23-aplication/src/master/ 
 
 ## Trello Board:
 * URL: https://trello.com/b/EL2wsMZy/project-trello-board 
